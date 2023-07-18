@@ -3,6 +3,9 @@
 <head>
     <title>my web</title>
     <style>
+        :root{
+            --bgcolor:orange;
+        }
     .hh11{
            background:linear-gradient(135deg,#14ffe9, #ffeb3b, #ff00e0);
            text-align:center;
@@ -15,18 +18,19 @@
        }
 #img{
     border-radius:50px;
-    border-color:#f8ff00;
+    border-color:var(--bgcolor);
     border-style:solid;
     margin-left:420px;
 }
 body{
-    background-color:#00eaff;
+    background-color:#fff;
     radius:50px;
 }
 #p{
 
     color:#ffffff;
     text-align:center;
+    background-color:var(--bgcolor);
 }
 #btm{
     color:#ffffff;
