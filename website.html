@@ -3,8 +3,12 @@
 <head>
     <title>my web</title>
     <style>
+        /*root means its a variable change color here*/
         :root{
             --bgcolor:orange;
+        }
+        .h33{
+            color:var(--bgcolor);
         }
     .hh11{
            background:linear-gradient(135deg,#14ffe9, #ffeb3b, #ff00e0);
@@ -18,9 +22,7 @@
        }
 #img{
     border-radius:50px;
-    border-color:var(--bgcolor);
-    border-style:solid;
-    border:10px;
+    border:20px solid var(--bgcolor);
     margin-left:420px;
 }
 body{
@@ -216,8 +218,9 @@ p::selection{
   <div>
   <img id="img" src="1.jpeg" style="width:115px; height:115px;"> 
   </div>
-  
+  <h3 class="h33">Suraj Das</h3>
   <div id="p">
+      
   <i><p>hello guys welcome to my website</p></i>
   <i><p>i am making this website</p></i>
       <br>
