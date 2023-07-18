@@ -69,6 +69,96 @@ p::selection{
       font-weight:bold;
       margin-right:25px;
     }
+         @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Permanent+Marker&display=swap');
+        *{
+            text-decoration:none;     
+            margin:0px;
+            padding:0px;
+            font-family:Lumanosimo;
+        }
+        body{
+            background-color:#c4c4c4;
+        }
+        .slide{
+            height:180px;
+            width:100px;
+            background-color:#fff;
+            position:absolute;
+            transition:ease;
+            transform:translatex(-200px);
+        }
+        h1{
+            color:#5e00c4;
+            font-weight:800px;
+            text-align:right;
+            padding:10px 0;
+            padding-right:20px;
+            padding-top:30px;
+        }
+        ul li a{
+            color:#011a41;
+            font-weight:500;
+            padding:5px 0;
+            display:block;      
+            text-align:center;      
+        }
+        input{
+            display:none;
+            visibility:hidden;
+            -webkit-appearance:none;
+        }
+        .toggle{
+            position:absolute;          
+            height:30px;
+            width:30px;
+            background-color:#fff;
+            z-index:1;
+            box-shadow:0 0 10px rgba(0, 0, 0, .4);
+        }
+        .toggle .common{
+          position:absolute;
+          height:2px;
+          width:20px;
+          background-color:#5e00c4;
+          border-radius:50px;
+          transition:0.3s ease;
+        }
+        .toggle .top_line{
+            top:30%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+         .toggle .middle_line{
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        .toggle .bottom_line{
+            top:70%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        input:checked ~ .toggle .top_line{
+            left:2px;
+            top:14px;
+            width:25px;
+            transform:rotate(45deg);
+        }
+       input:checked ~ .toggle .bottom_line{
+            top:14px;
+            left:2px;
+            width:25px;
+            transform:rotate(-45deg);
+        }
+        input:checked ~ .toggle .middle_line{
+           left:2px;
+           top:14px;
+           opacity:0;
+           transform:translatex(20px);
+        }
+        input:checked~.slide{
+            transform:translatex(0);
+            }
         </style>
 </head>
 <body>
@@ -85,6 +175,28 @@ p::selection{
     </ul>
   </div>
     </nav>
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        <div class="slide">
+            <h1>Menu</h1>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </label>
   <h1>WELCOME TO MY WEBSITE</h1> 
   <div>
   <img id="img" src="1.jpeg" style="width:115px; height:115px;"> 
