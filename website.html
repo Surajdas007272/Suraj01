@@ -179,9 +179,17 @@ p::selection{
             margin-left:395px;
             margin-right:395px;
         }
+.black{
+color:#fff;
+background-color:#000;
+}
+.white{
+color:#000;
+background-color:#fff;
+}
         </style>
 </head>
-<body>
+<body id="body">
     <nav class="navbar">
   <div class="navdiv">
     <div class="logo"><a href="#">Suraj Web</a></div>
@@ -220,6 +228,7 @@ p::selection{
     </label>
   <h1 class="hh11">WELCOME TO MY WEBSITE</h1> 
   <div>
+<div id="button" class"black">light or dark mode</div>
   <img id="img" src="1.jpeg" style="width:115px; height:115px;"> <br>
   </div>
   <br><h3 class="h33">Suraj Das</h3><br>
@@ -237,5 +246,16 @@ p::selection{
     <a href="music website.html">
     <h3>Brown Munde Song Download</h3>
     </a>
+<script>
+var body=document.getElementById("body");
+var button=document.getElementById("button");
+if("body.className="black"){
+body.className="white";
+button.className="black";
+}else{
+body.className="black";
+button.className="white";
+};
+</script>
 </body>
 </html>
