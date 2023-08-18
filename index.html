@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my web</title>
+    <style>
+        /*root means its a variable change color here*/
+        :root{
+            --bgcolor:orange;
+        }
+
+        .h33{
+            color:var(--bgcolor);
+            border-bottom:2px solid var(--bgcolor);
+            margin-left:43%;
+            margin-right:43%;
+        }
+    .hh11{
+           background:linear-gradient(135deg,#14ffe9, #ffeb3b, #ff00e0);
+           text-align:center;
+           animation:animate 1.5s linear infinite;
+       }
+       @keyframes animate{
+           100%{
+               filter:hue-rotate(360deg);
+           }
+       }
+#img{
+    border-radius:50px;
+    border:10px solid var(--bgcolor);
+    margin-left:45%;
+}
+body{
+    background-color:#fff;
+    radius:50px;
+}
+#p{
+
+    color:#ffffff;
+    text-align:center;
+    background-color:var(--bgcolor);
+    margin-left:50px;
+    margin-right:50px;
+    border-radius:20px;
+}
+#btm{
+    color:#ffffff;
+    width:60px;
+    background-color:#0003ff;
+    border:30px;
+    border-radius:10px;
+    width:150px;
+    height:50px;
+    position: sticky;
+    left:100px;
+}
+p::selection{
+    color:#ffffff;
+    background-color:#000000;
+}
+        *{
+      text-decoration:none;
+    }
+    .navbar{
+      padding-right:15px;
+      background:var(--bgcolor);
+      padding-left:15px;
+    }
+    .navdiv{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .logo a{
+      font-size:35px;
+      color:#ffffff;
+      font-weight:600;
+    }
+    li{
+      list-style:none;
+      display:inline-block;
+    }
+    li a{
+      color:#ffffff;
+      font-weight:bold;
+      margin-right:25px;
+    }         
+        *{
+            text-decoration:none;     
+            margin:0px;
+            padding:0px;            
+        }
+        
+        .slide{
+            height:180px;
+            width:100px;
+            background-color:#fff;
+            position:absolute;
+            transition:ease;
+            transform:translatex(-200px);
+        }
+        .h111{
+            color:#5e00c4;
+            font-weight:800px;
+            text-align:right;
+            padding:10px 0;
+            padding-right:20px;
+            padding-top:30px;
+        }
+       .ss .ll .aaa{
+            color:#011a41;
+            font-weight:500;
+            padding:5px 0;
+            display:block;      
+            text-align:center;      
+        }
+        .hh{
+            display:none;
+            visibility:hidden;
+            -webkit-appearance:none;
+        }
+        .toggle{
+            position:absolute;          
+            height:30px;
+            width:30px;
+            background-color:#fff;
+            z-index:1;
+            box-shadow:0 0 10px rgba(0, 0, 0, .4);
+        }
+        .toggle .common{
+          position:absolute;
+          height:2px;
+          width:20px;
+          background-color:#5e00c4;
+          border-radius:50px;
+          transition:0.3s ease;
+        }
+        .toggle .top_line{
+            top:30%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+         .toggle .middle_line{
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        .toggle .bottom_line{
+            top:70%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        .hh:checked ~ .toggle .top_line{
+            left:2px;
+            top:14px;
+            width:25px;
+            transform:rotate(45deg);
+        }
+       .hh:checked ~ .toggle .bottom_line{
+            top:14px;
+            left:2px;
+            width:25px;
+            transform:rotate(-45deg);
+        }
+        .hh:checked ~ .toggle .middle_line{
+           left:2px;
+           top:14px;
+           opacity:0;
+           transform:translatex(20px);
+        }
+        .hh:checked~.slide{
+            transform:translatex(0);
+            }
+        h3{
+            text-align:center;
+        }
+        .project{
+            text-align:center;
+            border-bottom:2px solid;
+            margin-left:395px;
+            margin-right:395px;
+        }
+#button{
+border:2px solid;
+border-radius:4px;
+padding:10px;
+margin-left:50px;
+margin-right:250px;
+}
+.black{
+color:#fff;
+background-color:#000;
+}
+.white{
+color:#000;
+background-color:#fff;
+}
+        </style>
+</head>
+<body id="body">
+    <nav class="navbar">
+  <div class="navdiv">
+    <div class="logo"><a href="#">Suraj Web</a></div>
+    <ul>      
+      <li>
+        <a href="backgrounds.html">About us</a>
+      </li>
+      <li>
+        <a href="">Contact us</a>
+      </li>
+    </ul>
+  </div>
+    </nav>
+    <label>
+        <input class="hh" type="checkbox">
+        <div class="toggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        
+        <div class="slide">
+            <h1 class="h111">Menu</h1>
+            <ul class="ss">
+                <li class="ll">
+                    <a class="aaa" href="#">Home</a>
+                </li>
+                <li class="ll">
+                    <a class="aaa" href="#">About Us</a>
+                </li>
+                <li class="ll">
+                    <a class="aaa" href="#">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </label>
+  <h1 class="hh11">WELCOME TO MY WEBSITE</h1> 
+  <div>
+  <img id="img" src="1.jpeg" style="width:115px; height:115px;"> <br>
+  </div>
+  <br><h3 class="h33">Suraj Das</h3><br>
+  <div id="p"><br>
+      
+  <i><p>hello guys welcome to my website</p></i>
+  <i><p>i am making this website</p></i>
+      <br>
+  </div>
+  <u><p class="project">project's</p></u>
+    <br>
+  <a href="index.html">
+ <h3>ET&T joining process & what is ET&T</h3>
+  </a> <br>
+    <a href="music website.html">
+    <h3>Brown Munde Song Download</h3>
+    </a>
+<script>
+   var=a confirm("My YouTube Channel Name--Killers1259h");
+    if(a){
+        alert("Thanks")
+    }else{
+        alert("It's ok")
+    }
+</script>
+</body>
+</html>
